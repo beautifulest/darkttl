@@ -163,7 +163,7 @@
     document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
         e.preventDefault();
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '8745f7cff7bda9d3bd4b694782bd3eeea8e32b0724f62f9eb18c60d90278e01bd0b84baa4a7ea75c90372caba158ae845418462a47051e98653c1c86a1195134pdNj1BkL2GylUJMFMsuJog==',
+            encryptedMsg = 'fda614942cc0027fa9c6135e52de5ec4f0bf95fb3444bb82d508204a49b907c96fbcac8258024fd0b2eb5bdcc1f9b7c6a4d234019d3d8d8f68cff9ac3d63ac35AITSBh8C2Unw4fNaD35sBw==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
